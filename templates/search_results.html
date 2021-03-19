@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+   <link rel="stylesheet" href="{% static 'css/styles.css'%}" >
+</head>
+
+<div class="header">
+  <h1>Search Results</h1>
+</div>
+
+  <div >
+     <div class="row">
+        <ol class="bullet"">
+          {% for book in object_list %}
+            <li>
+              <a href="#">{{ book.name }}, {{ book.author}} </a>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+</div>
+
+
+
+

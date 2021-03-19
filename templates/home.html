@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+     <link rel="stylesheet" href="{% static 'css/styles.css'%}" >
+</head>
+<div class="header">
+  <h1>Book search</h1>
+
+</div>
+  <body>
+
+              <form action="{% url 'search_results' %}" method="get">
+                <input name="q" type="text" placeholder="Search...">
+                <button type="submit"></button>
+              </form>
+ </body>
+</html>
+
+
+
+
+
+
+
